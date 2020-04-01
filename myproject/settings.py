@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'flighttracker',
     'course',
+    'new_course',
 ]
 
 MIDDLEWARE = [
