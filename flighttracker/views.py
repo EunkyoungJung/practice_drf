@@ -13,7 +13,7 @@ def passenger_list(request):
     if request.method == 'GET':
         passengers = Passenger.objects.all()
         serializer = PassengerSerializer(passengers, many=True)
-        return Response(Serializer.data, status=status.HTTP_200_OK)
+        return Response(serializer.data, status=status.HTTP_200_OK)
     
     elif request.method == 'POST':
         serializer = PassengerSerializer(data=request.data)
