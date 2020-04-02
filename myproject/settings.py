@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'new_course',
     'newer_course',
     'newest_course',
+    'order',
 ]
 
 MIDDLEWARE = [
